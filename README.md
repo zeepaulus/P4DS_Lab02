@@ -19,7 +19,7 @@ Dự đoán Khả năng Rời bỏ Ngân hàng (Customer Attrition Analysis) b�
 
 ---
 
-# 1. Giới thiệu
+# Giới thiệu
 
 ### Mô tả bài toán
 Dựa trên thông tin cá nhân, hành vi giao dịch, và lịch sử sử dụng tín dụng, project này xây dựng một mô hình học máy để dự đoán khả năng một khách hàng sẽ **ngừng sử dụng dịch vụ của ngân hàng** (`Attrited Customer`).
@@ -38,7 +38,7 @@ Việc dự đoán churn sớm giúp ngân hàng và phòng Marketing:
 
 ---
 
-# 2. Dataset
+# Dataset
 
 ## Nguồn dữ liệu
 Dữ liệu được sử dụng là bộ dữ liệu **Credit Card Customers Churn Prediction** (BankChurners.csv).
@@ -72,7 +72,7 @@ Dữ liệu được sử dụng là bộ dữ liệu **Credit Card Customers Ch
 - **Data types**: chứa cả dữ liệu categorical (6 features) và numerical (10 features)
 ---
 
-# 3. Method
+# Method
 
 ### Quy trình xử lý dữ liệu
 1. **Data Loading**: load dữ liệu bằng Numpy
@@ -138,7 +138,7 @@ Trong đó $N_k(\mathbf{x})$ là tập hợp $K$ láng giềng gần nhất, và
 - **Metrics vectorized:** Các chỉ số như Accuracy, F1‑Score, Confusion Matrix được tính bằng boolean masking trên mảng (so sánh `y_true`, `y_pred`) kết hợp với `np.sum`, giúp đánh giá mô hình nhanh và gọn.  
 - **Regularization:** L2 regularization được cộng trực tiếp vào hàm mất mát và gradient update, kiểm soát độ lớn của trọng số và giảm nguy cơ overfitting.  
 
-# 4. Installation & Setup
+# Installation & Setup
 
 1. Clone repository:
 ```bash
@@ -156,7 +156,7 @@ pip install -r requirements.txt
 python -m notebook
 ```
 
-# 5. Usage
+# Usage
 
 Chạy các notebooks theo thứ tự sau:
 
@@ -181,7 +181,7 @@ Run các cell theo thứ tự từ trên xuống. File này thực hiện:
 - Vẽ confusion matrix, ROC.
 - So sánh 2 mô hình.
 
-# 6. Results
+# Results
 ## Kết quả đạt được:
 | Metric | Logistic Regression | KNN (K=13) |
 | :--- | :--- | :--- |
@@ -196,7 +196,7 @@ Run các cell theo thứ tự từ trên xuống. File này thực hiện:
 **So sánh performance**
 <img width="1590" height="593" alt="output" src="https://github.com/user-attachments/assets/0f254590-c8f9-474a-a32e-0c0ead4d4028" />
 
-# 7. Project Structure
+# Project Structure
 ```
 project/
 ├── README.md                
@@ -219,7 +219,7 @@ project/
 └── README.md   <- bạn đang ở đây
 ```
 
-# 8. Challenges & Solutions
+# Challenges & Solutions
 **Challenges**: Ràng buộc chỉ sử dụng NumPy cho toàn bộ pipeline.
 
 **Solutions**:
@@ -227,18 +227,18 @@ project/
 - Broadcasting: Tận dụng broadcasting khi chuẩn hóa dữ liệu, cập nhật tham số và áp dụng ngưỡng để giảm code lặp và tăng hiệu năng.
 - Advanced indexing: Sử dụng boolean mask và fancy indexing để lọc dữ liệu, chia train–test, tính TP/FP/FN/TN mà không cần duyệt từng phần tử.
 
-# 9. Future Improvements
+# Future Improvements
 - **Cân bằng dữ liệu & mở rộng feature**: Sử dụng các kỹ thuật oversampling (như SMOTE) cho lớp thiểu số, đồng thời tạo thêm đặc trưng.
 - **Mô hình nâng cao**: Bổ sung các thuật toán khác như Decision Tree, Random Forest, mạng nơ‑ron đơn giản và các mô hình ensemble (bagging, voting).
 - **Giải thích & chọn lọc feature**: Áp dụng các phương pháp xAI (như SHAP) để hiểu đóng góp của từng feature và đánh giá mức độ quan trọng của chúng.
 - **Triển khai ứng dụng**: Đóng gói mô hình vào API (Flask/FastAPI) phục vụ dự đoán thời gian thực trên dữ liệu thực tế.
 
-# 10. Contributors
+# Contributors
 **Sinh viên**
 - Họ tên: Bùi Duy Bảo
 - MSSV: 23122021
 **Contact**
 - Email: 23122021@student.hcmus.edu.vn
 
-# 11. License
+# License
 MIT License - See `LICENSE` file for details
