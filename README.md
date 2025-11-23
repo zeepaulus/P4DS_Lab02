@@ -31,10 +31,10 @@ Việc dự đoán churn sớm giúp ngân hàng và phòng Marketing:
 - Chủ động đưa ra các chính sách đãi ngộ hoặc cải tiến dịch vụ để giữ chân khách hàng.
 
 ### Mục tiêu cụ thể
-1.  **Phân tích dữ liệu khám phá (EDA)** để tìm ra các insight quan trọng về hành vi tài chính.
-2.  **Xây dựng một pipeline tiền xử lý dữ liệu** hoàn chỉnh chỉ bằng NumPy.
-3.  **Cài đặt lại từ đầu (from scratch) mô hình Logistic Regression** và **KNN** cùng các hàm đánh giá bằng NumPy.
-4.  **Huấn luyện và tinh chỉnh** mô hình để đạt được hiệu suất dự đoán tốt nhất.
+- **Phân tích dữ liệu khám phá (EDA)** để tìm ra các insight quan trọng về hành vi tài chính.
+- **Xây dựng một pipeline tiền xử lý dữ liệu** hoàn chỉnh chỉ bằng NumPy.
+- **Cài đặt lại từ đầu (from scratch) mô hình Logistic Regression** và **KNN** cùng các hàm đánh giá bằng NumPy.
+- **Huấn luyện và tinh chỉnh** mô hình để đạt được hiệu suất dự đoán tốt nhất.
 
 ---
 
